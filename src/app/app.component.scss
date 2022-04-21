@@ -1,0 +1,13 @@
+@import "../const.scss";
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.notepad-list {
+  border-right: 2px solid black;
+  height: 100vh;
+  grid-column: span 3;
+}
+.notepad {
+  grid-column: span 9;
+}

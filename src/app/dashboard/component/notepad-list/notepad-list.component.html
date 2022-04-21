@@ -1,0 +1,17 @@
+<header>
+  <a class="add-sign" (click)="onAddNote()">+</a>
+  <a (click)="onRemoveNote()">
+    <i class="material-icons">delete</i>
+  </a>
+</header>
+<div *ngFor="let notes of listNotes; let i = index">
+  <div>
+    <a
+      class="list"
+      (click)="onEditNote(i)"
+      [style.background-color]="i == selected ? '#9ba4b4' : '#394867'"
+    >
+      {{ notes.title }}</a
+    >
+  </div>
+</div>

@@ -1,0 +1,41 @@
+@import "../../../../const.scss";
+
+header {
+  align-items: center;
+  background-color: $base;
+  border-bottom: 2px solid black;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: space-between;
+  height: 60px;
+}
+h2 {
+  margin: 0;
+}
+.trash-can {
+  width: 28px;
+}
+a:hover {
+  cursor: pointer;
+}
+.list {
+  align-items: center;
+  background-color: $lighter;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+  max-height: 80px;
+  justify-content: center;
+}
+
+.add-sign {
+  color: #fff !important;
+}
+
+i {
+  color: #fff !important;
+}

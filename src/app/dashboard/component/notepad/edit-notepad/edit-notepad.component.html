@@ -1,0 +1,23 @@
+<div class="container" *ngIf="listNotes.length > 0">
+  <div>
+    <label for="listNotes">Title</label>
+    <input
+      type="text"
+      class="input-field"
+      [(ngModel)]="title"
+      (keyup)="onKeyUp(isEdited)"
+    />
+  </div>
+  <textarea
+    [(ngModel)]="noteisEdited"
+    id="notepad"
+    cols="30"
+    rows="10"
+    placeholder="Whats on your mind?"
+    (keyup)="onKeyUp(isEdited)"
+  ></textarea>
+</div>
+<div class="empty-container" *ngIf="listNotes.length <= 0">
+  <h3>Whats you are thinking?</h3>
+  <button (click)="onAddNote()">ADD NOTE</button>
+</div>
